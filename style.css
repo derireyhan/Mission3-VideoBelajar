@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-left: 50px;
+}
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin-top: 4cm;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Mengurangi jarak antar elemen dalam form */
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 2px; /* Mengurangi jarak antara label dan input */
+    display: block;
+}
+
+label .required {
+    color: red; /* Menentukan warna merah untuk tanda bintang */
+}
+
+.asterisk {
+    color: red; /* Ganti dengan warna yang diinginkan */
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-action a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    margin-left: auto; /* Geser "Lupa Password?" ke kanan */
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #d9f5d9;
+    color: #4caf50;
+}
+
+.btn-google {
+    width: 100%;
+    display: block; /* Membuat tombol dianggap block untuk properti margin */
+    margin: 10px auto; /* Membuat tombol berada di tengah */
+    padding: 10px;
+    text-align: center; /* Teks di dalam tombol berada di tengah */
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #666;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.divider span {
+    font-size: 14px;
+    color: #666;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 10px;
+}
