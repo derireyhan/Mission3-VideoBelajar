@@ -1,5 +1,5 @@
 body {
-  background-color: bisque;
+  background-color: #fdf8e8;
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
@@ -15,14 +15,14 @@ header {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  padding: 0.5px;
+  padding: none;
   box-sizing: border-box;
   display: flex;
   align-items: center;
 }
 
 .header-logo {
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .container {
@@ -33,10 +33,118 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 350px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 h2 {
     margin-top: 5px;
     margin-bottom: 2px;
+    color: #333;
+}
+
+p {
+    margin-top: 7px;
+    color: #666;
+    font-size:14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 35px;
+    
+}
+
+label {
+    text-align: left;
+    font-size:14px;
+    color: #333;
+}
+
+
+.simbolbintang {
+    color: red;
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.form-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-action a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-masuk {
+    background-color: #61c764;
+    color: white
+}
+
+.button-daftar {
+    background-color: #d9f5d9;
+    color: #61c764;
+}
+
+.opsi-lain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opsi-lain span {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666
+}
+
+.opsi-lain::before,
+.opsi-lain::after {
+    content:"";
+    flex:1;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 3px;
+    margin-top: 10px; 
+}
+
+.btn-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #666;
+}
+
+.logo-google {
+    margin-right: 8px;
+    width: 15px;
 }
