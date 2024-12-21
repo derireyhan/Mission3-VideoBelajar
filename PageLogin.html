@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Videobelajar</title>
+    <link rel="stylesheet" href="styling-page-login.css" />
+  </head>
+  <body>
+    <!--HEADER AMBIL LOGO DARI FIGMA  -->
+    <header>
+      <div class="header-logo">
+        <img src="Logo-videobelajar.svg" alt="Logo Videobelajar"/>
+      </div>
+    </header>
+    <!-- HEADER SELESAI -->
+
+    <!-- CONTAINER LOGIN -->
+    <div class="container">
+      <h2>Masuk ke Akun</h2>
+      <p>Yuk, lanjutin belajarmu di videobelajar.</p>
+      <form>
+        <label for="email">E-mail<span class="simbolbintang">*</span></label>
+        <input type="email" id="email" placeholder="Masukkan e-mail" required>
+
+        <label for="password">Kata Sandi <span class="simbolbintang">*</span></label>
+        <input type="password" id=""password" placeholder="Masukkan kata sandi" required>
+
+        <div class="form-action">
+          <a href="#">Lupa Password?</a>       <!--simbol # nanti diganti pakai link kalo udah -->
+        </div>
+        <button class="button-masuk">Masuk</button> 
+        <button class="button-daftar">Daftar</button>
+      </form>
+      <div class="opsi-lain"><span>atau</span></div>
+      <button class="btn-google">
+        <image src="logo-google.png" alt="logo google" style="width:18px"/>Masuk dengan Googke</button>
+    </div>
+  </body>
+</html>
