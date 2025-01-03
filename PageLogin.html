@@ -7,32 +7,50 @@
     <link rel="stylesheet" href="styling-page-login.css" />
   </head>
   <body>
-
     <header>
       <div class="header-logo">
-        <img src="Logo-videobelajar.svg" alt="Logo Videobelajar" width="200px"/>
+        <img
+          src="assets/Logo-videobelajar.png"
+          alt="Logo Videobelajar"
+          width="200px"
+        />
       </div>
     </header>
-   
+
     <div class="container">
       <h2>Masuk ke Akun</h2>
       <p>Yuk, lanjutin belajarmu di videobelajar.</p>
       <form>
         <label for="email">E-Mail <span class="simbolbintang">*</span></label>
-        <input type="email" id="email" placeholder="Masukkan e-mail" required>
+        <input type="email" id="email" placeholder="Masukkan e-mail" class="email" required />
 
-        <label for="password">Kata Sandi <span class="simbolbintang">*</span></label>
-        <input type="password" id="password" placeholder="Masukkan kata sandi" required>
-      
+        <label for="password"
+          >Kata Sandi <span class="simbolbintang">*</span></label
+        >
+        <input
+          type="password"
+          id="password"
+          placeholder="Masukkan kata sandi"
+          required
+        />
+
         <div class="form-action">
-          <a href="#">Lupa Password?</a>       <!--simbol # nanti diganti pakai link kalo udah -->
+          <a href="#">Lupa Password?</a>
+          <!--simbol # nanti diganti pakai link kalo udah -->
         </div>
-        <button class="button-masuk">Masuk</button> 
-        <button class="button-daftar">Daftar</button>
+
+        <button class="button-masuk">Masuk</button>
+        <button class="button-daftar" href="registerGPT.html">Daftar</button>
       </form>
+
       <div class="opsi-lain"><span>atau</span></div>
       <button class="btn-google">
-        <image src="logo-google.png" alt="logo google" class="logo-google"/>Masuk dengan Google</button>
+        <image
+          src="assets/logo-google.png"
+          alt="logo google"
+          class="logo-google"
+        />Masuk dengan Google
+      </button>
     </div>
   </body>
 </html>

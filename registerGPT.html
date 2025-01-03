@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Akun - Videobelajar</title>
+    <link rel="stylesheet" href="stylingregisterGPT.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img
+          src="assets/Logo-videobelajar.png"
+          alt="Logo Videobelajar"
+          width="200px"
+        />
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 class="form-title">Pendaftaran Akun</h2>
+      <p class="form-subtitle">Yuk, daftarkan akunmu sekarang juga!</p>
+
+      <form>
+        <label for="name"
+          >Nama Lengkap <span class="simbolbintang">*</span></label
+        >
+        <input type="text" id="name" placeholder="Tulis Nama Lengkap" />
+
+        <label for="email">E-Mail <span class="simbolbintang">*</span></label>
+        <input type="email" id="email" placeholder="Masukkan e-mail" />
+
+        <label for="phone">No. Hp <span class="simbolbintang">*</span></label>
+        <div class="phone-input">
+          <div class="phone-select">
+            <div class="flag-wrapper">
+              <div
+                class="flag"
+                id="flag"
+                style="background-image: url('https://flagcdn.com/w40/id.png')"
+              ></div>
+            </div>
+            <select
+              id="country-code"
+              class="country-code"
+              onchange="updateFlag()"
+            >
+              <option value="id" data-flag="https://flagcdn.com/w40/id.png">
+                +62
+              </option>
+              <option value="us" data-flag="https://flagcdn.com/w40/us.png">
+                +1
+              </option>
+              <option value="sg" data-flag="https://flagcdn.com/w40/sg.png">
+                +65
+              </option>
+            </select>
+            <div class="dropdown-arrow"></div>
+          </div>
+          <input
+            type="tel"
+            id="phone-number"
+            class="phone-number"
+            placeholder="Nomor HP Anda"
+          />
+        </div>
+
+        <label for="password"
+          >Kata Sandi <span class="simbolbintang">*</span></label
+        >
+        <input
+          type="password"
+          id="password"
+          placeholder="Masukkan kata sandi"
+          required
+        />
+
+        <label for="confirm-password"
+          >Konfirmasi Kata Sandi <span class="simbolbintang">*</span></label
+        >
+        <input
+          type="password"
+          id="confirm-password"
+          placeholder=" Ulangi Kata Sandi"
+        />
+
+        <div class="form-action">
+          <a href="#" class="forgot-password">Lupa Password?</a>
+        </div>
+
+        <button class="button-daftar">Daftar</button>
+        <button class="button-masuk">Masuk</button>
+      </form>
+      <div class="opsi-lain"><span>atau</span></div>
+      <button class="btn-google">
+        <image
+          src="assets/logo-google.png"
+          alt="logo google"
+          class="logo-google"
+        />Daftar dengan Google
+      </button>
+    </div>
+
+    <script>
+      function updateFlag() {
+        const select = document.getElementById("country-code");
+        const flag = document.getElementById("flag");
+        const selectedOption = select.options[select.selectedIndex];
+        const flagUrl = selectedOption.getAttribute("data-flag");
+        flag.style.backgroundImage = `url('${flagUrl}')`;
+      }
+    </script>
+  </body>
+</html>
