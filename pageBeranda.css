@@ -63,7 +63,7 @@ header {
     max-width: 900px;
     margin: 0 auto;
     position: relative; /* Untuk menjaga teks tetap di atas overlay */
-    background-image: url('assets/background-image.png'); /* Ganti dengan gambar latar Anda */
+    background-image: url('assets/background-image.png'); /* Ganti dengan gambar latar*/
     background-size: cover;
     background-position: center;
     border-radius: 12px;
@@ -346,7 +346,7 @@ header {
 .cta-newsletter .newsletter-content {
     max-width: 900px;
     margin: 0 auto;
-    background-image: url('assets/background-image.png'); /* Ganti dengan gambar latar Anda */
+    background-image: url('assets/background-image.png'); /* Ganti dengan gambar latar*/
     background-size: cover;
     background-position: center;
     border-radius: 12px;
